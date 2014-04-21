@@ -1,0 +1,13 @@
+
+
+<div class=results>
+	<div class=title>
+		<h2> Here is your movies list</h2>
+	</div>
+	<div class=list>
+		<% @movie_result.each do |movie_name|%>  
+
+	<li><a href="/show/<%= movie_name["imdbID"] %>">  <%=movie_name["Title"]%> - <%=movie_name["Year"]%> </a>
+	<% end %></li>
+	</div>
+</div>
